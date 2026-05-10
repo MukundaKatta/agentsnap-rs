@@ -1,0 +1,23 @@
+[package]
+name = "agentsnap"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+authors = ["MukundaKatta"]
+description = "Snapshot tests for AI agent traces. Record once, replay-and-compare on every run; the agent equivalent of Jest snapshots."
+license = "MIT"
+repository = "https://github.com/MukundaKatta/agentsnap-rs"
+homepage = "https://github.com/MukundaKatta/agentsnap-rs"
+documentation = "https://docs.rs/agentsnap"
+readme = "README.md"
+keywords = ["llm", "agent", "testing", "snapshot", "evaluation"]
+categories = ["development-tools::testing", "api-bindings"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+similar = "2"
+thiserror = "2"
+
+[dev-dependencies]
+tempfile = "3"
